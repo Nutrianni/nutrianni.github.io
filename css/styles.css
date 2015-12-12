@@ -4,9 +4,7 @@ html, html a {
     overflow-x: hidden;
 }
 
-img {
-    width: 100%;
-}
+.section-image { width: 100%; }
 
 .main-wrapper {
     font-family: 'Cardo', serif;
@@ -29,30 +27,13 @@ img {
     padding-bottom: 0;
 }
 
-.sticky-nav {
-    background: rgba(0, 0, 0, 0.2);
-    color: #ffffff;
-    font-size: 1rem;
-    transition: width 0.3s ease, left 0.3s ease;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-}
+.sticky-nav { background: rgba(255, 255, 255, 0.4); color: #000000; font-size: 1rem; transition: width 0.3s ease, left 0.3s ease; position: fixed; width: 100%; z-index: 2; box-shadow: 0 0 3px #888888; }
 
-.sticky-nav-menu-link {
-    text-transform: uppercase;
-    float: left;
-    margin: 16px 0 16px 32px;
-}
+.sticky-nav ul { text-align: right; padding: 0 5px; margin-right: 50px; }
 
-.sticky-nav-menu-link:hover {
-    cursor: pointer;
-}
+.nav-element { display: inline-block; }
 
-.sticky-nav-menu-text {
-    display: none;
-    vertical-align: middle;
-}
+.nav-element a { color: #000000; text-transform: uppercase; text-decoration: none; }
 
 .sticky-nav-menu-icon {
     display: inline-block;
