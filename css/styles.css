@@ -110,15 +110,23 @@ section {
     max-height: 600px;
 }
 
-.section-text-wrapper {
-    padding: 0 30px 50px 30px;
-}
+.contact-form { margin: auto; font-family: 'Josefin Sans', sans-serif; max-width: 450px; }
 
-.section-title {
-    text-transform: uppercase;
-    text-align: center;
-    padding: 20px 0;
-}
+.contact-form-label, .contact-form-input { display: block; }
+
+.contact-form-label { color: #b5b4ba; }
+
+.contact-form-input { width: 100%; margin-bottom: 20px; margin-top: 5px; padding: 6px 10px; border: 1px solid #b5b4ba; border-radius: 3px; box-sizing: border-box; }
+
+.contact-form-button { float: right; padding: 10px 20px; background: #87A96B; color: #ffffff; border: 1px solid #4F7942; border-radius: 3px; cursor: pointer; }
+
+.contact-form-button:hover { opacity: 0.8; }
+
+.contact-form-feedback { display: none; margin-top: 10px; text-align: right; }
+
+.contact-form-error { color: #e51e03; }
+
+.contact-form-success { color: #66cd00; }
 
 @media (min-width: 768px) {
     .main-wrapper {

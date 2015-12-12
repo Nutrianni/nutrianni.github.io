@@ -95,12 +95,22 @@
         <div class="col col-text col-left">
             <div class="section-text-wrapper">
                 <h2 class="section-title">Contact</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id ante cursus, commodo turpis at,
-                    ultricies neque. Vivamus congue lobortis dictum. Cras ex sapien, ullamcorper eu fermentum id, suscipit quis
-                    orci. Etiam at ultricies lectus. Sed et quam risus. Praesent cursus eleifend elit feugiat pellentesque.
-                    Donec eget augue fermentum, semper tortor a, auctor risus. Nullam eget tellus a nibh facilisis luctus.
-                </p>
+                <form class="contact-form js-contact-form">
+                    <label class="contact-form-label" for="name">Name</label>
+                    <input class="contact-form-input js-contact-form-name" type="text" name="name" id="name" required>
+
+                    <label class="contact-form-label" for="name">E-mail</label>
+                    <input class="contact-form-input js-contact-form-email" type="email" name="email" id="email" required>
+
+                    <label class="contact-form-label" for="message">Message</label>
+                    <textarea class="contact-form-input js-contact-form-message" name="message" id="message" rows="8" cols="25" required></textarea>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <div class="contact-form-button js-contact-form-button">Send</div>
+                    <div style="clear: both;"></div>
+                    <div class="contact-form-feedback contact-form-error js-contact-form-fill-all">Please, fill all fields!</div>
+                    <div class="contact-form-feedback contact-form-error js-contact-form-failure">Message was not delivered. Please, try again later.</div>
+                    <div class="contact-form-feedback contact-form-success js-contact-form-success">Thank you for your message!</div>
+                </form>
             </div>
         </div>
         <div class="col col-image col-right">
@@ -110,6 +120,6 @@
     <footer class="footer">
     </footer>
 </div>
-<script type="text/javascript" src="js/main.js"/>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
