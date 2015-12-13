@@ -1,18 +1,25 @@
+ready(init);
+
 function ready(fn) {
   if (document.readyState !== 'loading') fn();
   else document.addEventListener('DOMContentLoaded', fn);
 }
 
+function init() {
+  initStickyNav();
+  initContactForm();
+}
+
 function initContactForm() {
   var submitButton    = document.querySelector('.js-contact-form-button');
-  var inputs          = Array.prototype.slice.call(document.querySelectorAll('.contact-form-input'));
   var inputName       = document.querySelector('.js-contact-form-name');
   var inputEmail      = document.querySelector('.js-contact-form-email');
   var inputMessage    = document.querySelector('.js-contact-form-message');
-  var feedbacks       = Array.prototype.slice.call(document.querySelectorAll('.contact-form-feedback'));
+  var inputs          = [inputName, inputEmail, inputMessage];
   var feedbackFillAll = document.querySelector('.js-contact-form-fill-all');
   var feedbackSuccess = document.querySelector('.js-contact-form-success');
   var feedbackFailure = document.querySelector('.js-contact-form-failure');
+  var feedbacks       = [feedbackFillAll, feedbackSuccess, feedbackFailure];
 
   submitButton.addEventListener('click', function (e) {
     e.preventDefault();
@@ -67,4 +74,25 @@ function hideAll(elements) {
   });
 }
 
-ready(initContactForm);
+function initStickyNav() {
+  var nav = document.querySelector('.js-sticky-nav');
+  var solidPoint = window.innerHeight;
+
+  window.onscroll = function (e) {
+    var offset = window.pageYOffset;
+    var distance = solidPoint - offset;
+
+    if (distance <= 0) addClass(nav, 'solid-bg');
+    else if (offset <= solidPoint) removeClass(nav, 'solid-bg');
+  }
+}
+
+function addClass(element, className) {
+  if (element.classList) element.classList.add(className);
+  else element.className += ' ' + className;
+}
+
+function removeClass(element, className) {
+  if (element.classList) element.classList.remove(className);
+  else element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+}
