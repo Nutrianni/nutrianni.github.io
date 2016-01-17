@@ -41,102 +41,213 @@
 <body>
 <div class="main-wrapper js-main-wrapper">
     <header class="header">
-        <div class="headline">
-            <div class="headline-wrapper">
-                <h1 class="headline-text">Nutrianni</h1>
-
-                <a href="#story">
-                    <div class="forward-button"></div>
-                </a>
-            </div>
-        </div>
         <nav class="sticky-nav js-sticky-nav" role="navigation">
             <ul>
-                <li class="nav-element"><a href="#story">Story</a></li>
+                <li class="nav-element"><a href="#company">Yritys</a></li>
                 <li class="nav-element"><span>|</span></li>
-                <li class="nav-element"><a href="#services">Services</a></li>
+                <li class="nav-element"><a href="#nutrition-coaching">Ravintovalmennus</a></li>
                 <li class="nav-element"><span>|</span></li>
-                <li class="nav-element"><a href="#references">References</a></li>
+                <li class="nav-element"><a href="#sport-nutrition">Urheiluravitsemus</a></li>
                 <li class="nav-element"><span>|</span></li>
-                <li class="nav-element"><a href="#contact">Contacts</a></li>
+                <li class="nav-element"><a href="#coach">Valmentaja</a></li>
+                <li class="nav-element"><span>|</span></li>
+                <li class="nav-element"><a href="#contact">Yhteydenotto</a></li>
             </ul>
         </nav>
+        <div class="logo-position-wrapper">
+            <div class="logo-image-wrapper">
+                <img src="images/logo-350.png"
+                     srcset="images/logo-350.png 350w, images/logo-650.png 650w"
+                     sizes="(min-width: 768px) 650px, 350px"
+                     class="logo" alt="Nutrianni logo"/>
+            </div>
+        </div>
     </header>
-    <section id="story" class="section">
+    <section id="company" class="section">
         <div class="col col-text col-right">
             <div class="section-text-wrapper">
-                <h2 class="section-title">Story</h2>
+                <h2 class="section-title">Yritys</h2>
+
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id ante cursus, commodo turpis at,
-                    ultricies neque. Vivamus congue lobortis dictum. Cras ex sapien, ullamcorper eu fermentum id, suscipit quis
-                    orci. Etiam at ultricies lectus. Sed et quam risus. Praesent cursus eleifend elit feugiat pellentesque.
-                    Donec eget augue fermentum, semper tortor a, auctor risus. Nullam eget tellus a nibh facilisis luctus.
+                    Jääkö aamupalasi syömättä, sorrutko liian usein karkkihyllyllä, etkö saa treenistäsi kaikkea irti?
+                    Olet tullut aivan oikealle sivulle!
+                </p>
+
+                <p>
+                    Olen Anni Löppönen ja Nutrianni on henkilökohtaista ravintovalmennusta tarjoava yritys, jonka
+                    päämääränä on tarjota ravitsemusohjausta asiakkaan asuinpaikasta ja sijainnista riippumatta.
+                    Nutrianni on erikoistunut huippu-urheilijoiden ja kilpakuntoilijoiden kokonaisvaltaiseen
+                    ravitsemuksen parantamiseen. Yritys tarjoaa ravintovalmennusta urheilijoiden lisäksi kaikille sitä
+                    tarvitseville, on kyseessä sitten painonpudotus, vatsaongelmat, raskaudesta palautuminen,
+                    lihasmassan kasvattaminen, suorituskyvyn parantaminen tai esimerkiksi urheiluvammojen ehkäiseminen
+                    ravitsemuksen näkökulmasta.
                 </p>
             </div>
         </div>
-        <div class="col col-image col-left">
-            <img class="section-image" src="images/image1.jpg" alt="">
+        <div class="col col-image col-left" />
+    </section>
+    <section id="nutrition-coaching" class="section">
+        <div class="nutrition-coaching-wrapper">
+            <h2 class="section-title">Ravintovalmennus</h2>
+
+            <p>
+                Ei väliä asutko Suomessa vai ulkomailla tai sattuuko videotapaamisemme keskelle työmatkaa tai
+                pelireissua, Nutriannin myötä sinulla on ravintovalmentaja mukana missä ikinä syötkin!
+            </p>
+            <div class="pricing-table">
+                <div class="pricing-column">
+                    <div class="label-cell header-cell"></div>
+                    <div class="label-cell price-cell"></div>
+                    <div class="label-cell">Tapaamisia</div>
+                    <div class="label-cell">Kesto</div>
+                    <div class="label-cell">Ruokapäiväkirja</div>
+                    <div class="label-cell">Kirjallinen ravintoanalyysi</div>
+                    <div class="label-cell">Viikkotehtävät</div>
+                    <div class="label-cell"></div>
+                </div>
+                <div class="pricing-column">
+                    <div class="header-cell">Quick Fix</div>
+                    <div class="price-cell">190 <span class="euro">&euro;</span></div>
+                    <div data-label="Tapaamisia"><b>1</b></div>
+                    <div data-label="Kesto">-</div>
+                    <div data-label="Ruokapäiväkirja"><span class="check-mark"></span></div>
+                    <div data-label="Kirjallinen ravintoanalyysi"><span class="check-mark"></span></div>
+                    <div data-label="Viikkotehtävät"><span class="x-mark"></span></div>
+                    <div class="order-cell"><a href="#contact" class="order-button">Tilaa</a></div>
+                </div>
+                <div class="pricing-column">
+                    <div class="header-cell">Start</div>
+                    <div class="price-cell">270 <span class="euro">&euro;</span></div>
+                    <div data-label="Tapaamisia"><b>2</b></div>
+                    <div data-label="Kesto"><b>6</b> viikkoa</div>
+                    <div data-label="Ruokapäiväkirja"><span class="check-mark"></span></div>
+                    <div data-label="Kirjallinen ravintoanalyysi"><span class="check-mark"></span></div>
+                    <div data-label="Viikkotehtävät"><span class="x-mark"></span></div>
+                    <div class="order-cell"><a href="#contact" class="order-button">Tilaa</a></div>
+                </div>
+                <div class="pricing-column popular">
+                    <div class="header-cell">
+                        <span>Focus</span>
+                        <div class="corner-ribbon">Suosituin!</div>
+                    </div>
+                    <div class="price-cell">440 <span class="euro">&euro;</span></div>
+                    <div data-label="Tapaamisia"><b>4</b></div>
+                    <div data-label="Kesto"><b>12</b> viikkoa</div>
+                    <div data-label="Ruokapäiväkirja"><span class="check-mark"></span></div>
+                    <div data-label="Kirjallinen ravintoanalyysi"><span class="check-mark"></span></div>
+                    <div data-label="Viikkotehtävät"><span class="check-mark"></span></div>
+                    <div class="order-cell"><a href="#contact" class="order-button">Tilaa</a></div>
+                </div>
+                <div class="pricing-column">
+                    <div class="header-cell">Change</div>
+                    <div class="price-cell">730 <span class="euro">&euro;</span></div>
+                    <div data-label="Tapaamisia"><b>7</b></div>
+                    <div data-label="Kesto"><b>24</b> viikkoa</div>
+                    <div data-label="Ruokapäiväkirja"><span class="check-mark"></span></div>
+                    <div data-label="Kirjallinen ravintoanalyysi"><span class="check-mark"></span></div>
+                    <div data-label="Viikkotehtävät"><span class="check-mark"></span></div>
+                    <div class="order-cell"><a href="#contact" class="order-button">Tilaa</a></div>
+                </div>
+                <div class="pricing-column">
+                    <div class="header-cell">New Life</div>
+                    <div class="price-cell">1280 <span class="euro">&euro;</span></div>
+                    <div data-label="Tapaamisia"><b>13</b></div>
+                    <div data-label="Kesto"><b>48</b> viikkoa</div>
+                    <div data-label="Ruokapäiväkirja"><span class="check-mark"></span></div>
+                    <div data-label="Kirjallinen ravintoanalyysi"><span class="check-mark"></span></div>
+                    <div data-label="Viikkotehtävät"><span class="check-mark"></span></div>
+                    <div class="order-cell"><a href="#contact" class="order-button">Tilaa</a></div>
+                </div>
+            </div>
+
+            <p>
+                Valmennuspakettien sisällöt mukautetaan asiakkaan tarpeiden sekä elämäntilanteen mukaan.
+            </p>
         </div>
     </section>
-    <section id="services" class="section">
+    <section id="sport-nutrition" class="section">
         <div class="col col-text col-left">
             <div class="section-text-wrapper">
-                <h2 class="section-title">Services</h2>
+                <h2 class="section-title">Urheiluravitsemus</h2>
+
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id ante cursus, commodo turpis at,
-                    ultricies neque. Vivamus congue lobortis dictum. Cras ex sapien, ullamcorper eu fermentum id, suscipit quis
-                    orci. Etiam at ultricies lectus. Sed et quam risus. Praesent cursus eleifend elit feugiat pellentesque.
-                    Donec eget augue fermentum, semper tortor a, auctor risus. Nullam eget tellus a nibh facilisis luctus.
+                    Huippu-urheilijalta vaaditaan onnistumista kaikessa tekemisessä sekä jatkuvaa kehittymistä.
+                    Jokaisella huippu-urheilijalla on ympärillään tiimi fysiikkavalmentajia, hierojia, huoltajia sekä
+                    henkisiä tukijoukkoja. Urheilijan optimaalisen kehityksen saavuttamiseen vaikuttaa liikunnan, levon
+                    ja psyykkisen hyvinvoinnin lisäksi monipuolinen ruokavalio. Nutriannin avulla huippu-urheilijalle
+                    henkilökohtaisesti räätälöity ravintovalmennussuunnitelma mahdollistaa optimaalisen jaksamisen ja
+                    kehityksen, osaltaan parantaa niin vastustuskykyä kuin, ennaltaehkäisee urheiluvammojen syntyä.
                 </p>
             </div>
         </div>
-        <div class="col col-image col-right">
-            <img class="section-image" src="images/image2.jpg" alt="">
-        </div>
+        <div class="col col-image col-right" />
     </section>
-    <section id="references" class="section">
+    <section id="coach" class="section">
         <div class="col col-text col-right">
             <div class="section-text-wrapper">
-                <h2 class="section-title">References</h2>
+                <h2 class="section-title">Valmentaja</h2>
+
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id ante cursus, commodo turpis at,
-                    ultricies neque. Vivamus congue lobortis dictum. Cras ex sapien, ullamcorper eu fermentum id, suscipit quis
-                    orci. Etiam at ultricies lectus. Sed et quam risus. Praesent cursus eleifend elit feugiat pellentesque.
-                    Donec eget augue fermentum, semper tortor a, auctor risus. Nullam eget tellus a nibh facilisis luctus.
+                    Koulutettuna ravintovalmentajana haluan tarjota asiakkailleni pysyviä muutoksia heidän
+                    ravitsemuskäyttäytymisessä ja yhdessä asiakkaan kanssa mahdollistaa hänen pääsyn ravitsemuksellisiin
+                    tavoitteisiinsa. Säännöllinen, monipuolinen ja laadukas ravitsemus yhdessä riittävän liikunnan
+                    kanssa edistävät terveyttä ja vähentävät riskiä sairastua moniin elintapasairauksiin. Nutriannin
+                    päämäärä onkin auttaa elinikäisessä ravintokäyttäytymisessä ja välttää lyhyitä dieettejä.
                 </p>
             </div>
         </div>
-        <div class="col col-image col-left">
-            <img class="section-image" src="images/image3.jpg" alt="">
-        </div>
+        <div class="col col-image col-left" />
     </section>
     <section id="contact" class="section">
         <div class="col col-text col-left">
             <div class="section-text-wrapper">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Yhteydenotto</h2>
                 <form class="contact-form js-contact-form">
-                    <label class="contact-form-label" for="name">Name</label>
-                    <input class="contact-form-input js-contact-form-name" type="text" name="name" id="name" required>
+                    <p>
+                        Ota rohkeasti yhteyttä, niin keskustellaan lisää!
+                    </p>
+                    <label class="contact-form-label" for="name">Nimi</label>
+                    <input class="contact-form-input js-contact-form-name" type="text" name="name" id="name">
 
-                    <label class="contact-form-label" for="name">E-mail</label>
-                    <input class="contact-form-input js-contact-form-email" type="email" name="email" id="email" required>
+                    <label class="contact-form-label" for="name">Sähköposti</label>
+                    <input class="contact-form-input js-contact-form-email" type="email" name="email" id="email">
 
-                    <label class="contact-form-label" for="message">Message</label>
-                    <textarea class="contact-form-input js-contact-form-message" name="message" id="message" rows="8" cols="25" required></textarea>
+                    <label class="contact-form-label" for="message">Viesti</label>
+                    <textarea class="contact-form-input js-contact-form-message" name="message" id="message" rows="8" cols="25"></textarea>
                     <input type="text" name="_gotcha" style="display:none" />
-                    <div class="contact-form-button js-contact-form-button">Send</div>
+                    <div class="contact-form-button js-contact-form-button">Lähetä</div>
                     <div style="clear: both;"></div>
-                    <div class="contact-form-feedback contact-form-error js-contact-form-fill-all">Please, fill all fields!</div>
-                    <div class="contact-form-feedback contact-form-error js-contact-form-failure">Message was not delivered. Please, try again later.</div>
-                    <div class="contact-form-feedback contact-form-success js-contact-form-success">Thank you for your message!</div>
+                    <div class="contact-form-feedback contact-form-error js-contact-form-fill-all">Ole hyvä ja täytä kaikki kentät!</div>
+                    <div class="contact-form-feedback contact-form-error js-contact-form-failure">Viestiä ei voitu toimittaa. Yritä hetken päästä uudelleen.</div>
+                    <div class="contact-form-feedback contact-form-success js-contact-form-success">Kiitos viestistäsi!</div>
                 </form>
             </div>
         </div>
-        <div class="col col-image col-right">
-            <img class="section-image" src="images/image4.jpg" alt="">
-        </div>
+        <div class="col col-image col-right" />
     </section>
     <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-col footer-logo-wrapper">
+                <img src="images/logo-350.png"
+                     srcset="images/logo-350.png 350w, images/logo-650.png 650w"
+                     sizes="(min-width: 768px) 650px, 350px"
+                     class="footer-logo" alt="Nutrianni logo"/>
+            </div>
+            <div class="footer-col footer-links">
+                <a href="#company">Yritys</a>
+                <a href="#nutrition-coaching">Ravintovalmennus</a>
+                <a href="#sport-nutrition">Urheiluravitsemus</a>
+                <a href="#coach">Valmentaja</a>
+                <a href="#contact">Yhteydenotto</a>
+            </div>
+            <div class="footer-col footer-contact">
+                <span>NUTRIANNI</span>
+                <span>2727200-6</span>
+                <span>nutrianni@gmail.com</span>
+                <span class="some-link"><a href="https://www.facebook.com/nutrianni"><span class="fb-icon"></span></a></span>
+            </div>
+        </div>
+        <span class="credits">Site by <a href="http://nikoru.fi" target="_blank">NIKORU</a></span>
     </footer>
 </div>
 <script type="text/javascript" src="js/main.js"></script>
