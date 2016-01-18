@@ -28,6 +28,11 @@ html, html a {
     height: 100vh;
 }
 
+.letter-logo {
+    display: none;
+    margin-left: 50px;
+}
+
 .sticky-nav {
     position: fixed;
     font-family: 'Josefin Sans', serif;
@@ -39,6 +44,16 @@ html, html a {
     z-index: 2;
     box-shadow: 0 0 3px #888888;
     width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .sticky-nav.solid-bg {
@@ -508,6 +523,10 @@ html, html a {
 }
 
 @media (min-width: 940px) {
+    .letter-logo {
+        display: block;
+    }
+
     .section {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
