@@ -62,13 +62,15 @@ html, html a {
 
 .sticky-nav ul {
     text-align: center;
-    padding: 0 5px;
+    padding: 10px 5px;
     margin-right: 0;
+    line-height: 1.6em;
 }
 
 .nav-element {
     display: inline-block;
     color: #383838;
+    padding: 0 5px;
 }
 
 .nav-element a {
@@ -481,15 +483,6 @@ html, html a {
         margin: 5%;
     }
 
-    .sticky-nav {
-        font-size: 1em;
-    }
-
-    .sticky-nav ul {
-        text-align: right;
-        margin-right: 50px;
-    }
-
     .main-wrapper {
         -webkit-transition: width 0.3s ease, left 0.3s ease;
         transition: width 0.3s ease, left 0.3s ease;
@@ -519,6 +512,17 @@ html, html a {
 
     .footer-wrapper {
         padding: 150px 50px;
+    }
+}
+
+@media (min-width: 812px) {
+    .sticky-nav {
+        font-size: 1em;
+    }
+
+    .sticky-nav ul {
+        text-align: right;
+        margin-right: 50px;
     }
 }
 
