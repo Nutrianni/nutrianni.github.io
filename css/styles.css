@@ -670,3 +670,45 @@ html, html a {
         background-image: url('../images/blueberries-720.jpg');
     }
 }
+
+/**
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+    .header { height: 1024px; }
+}
+
+/**
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+    .header { height: 768px; }
+}
+
+/**
+ * iPhone 5 with portrait orientation.
+ */
+@media all and (device-width: 320px) and (device-height: 568px) and (orientation:portrait){
+    .header { height: 524px; }
+}
+
+/**
+ * iPhone 5 with landscape orientation.
+ */
+@media all and (device-width: 320px) and (device-height: 568px) and (orientation:landscape){
+    .header { height: 320px; }
+}
+
+/**
+ * iPhone 4 with portrait orientation.
+ */
+@media all and (device-width: 320px) and (device-height: 480px) and (orientation:portrait){
+    .header { height: 436px; }
+}
+
+/**
+ * iPhone 4 with landscape orientation.
+ */
+@media all and (device-width: 320px) and (device-height: 480px) and (orientation:landscape){
+    .header { height: 320px; }
+}
