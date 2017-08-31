@@ -441,6 +441,13 @@ html, html a {
     display: inline-block;
 }
 
+.ig-icon {
+    background: url('../images/ig-icon.svg') no-repeat;
+    background-size: 100%;
+    padding: 16px;
+    display: inline-block;
+}
+
 .credits {
     text-align: right;
     display: block;
