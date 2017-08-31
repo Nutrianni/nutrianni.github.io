@@ -421,24 +421,27 @@ html, html a {
     opacity: 0.6;
 }
 
-.footer-contact span {
-    display: block;
-}
-
 .footer-links,
 .footer-contact {
     text-align: left;
 }
 
-.some-link {
-    width: 32px;
+.fb-icon, .ig-icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
 }
 
 .fb-icon {
     background: url('../images/fb-icon.svg') no-repeat;
     background-size: 100%;
     padding: 16px;
-    display: inline-block;
+}
+
+.ig-icon {
+    background: url('../images/ig-icon.svg') no-repeat;
+    background-size: 100%;
+    padding: 14px;
 }
 
 .credits {
